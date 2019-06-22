@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BuyListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BuyListControl.Designer.cs">
+      <DependentUpon>BuyListControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\BuySearchControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,14 +77,17 @@
     <Compile Include="Controls\SellSearchControl.Designer.cs">
       <DependentUpon>SellSearchControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\BuyListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\BuyListForm.Designer.cs">
+      <DependentUpon>BuyListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\BuyListControl.resx">
+      <DependentUpon>BuyListControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\BuySearchControl.resx">
       <DependentUpon>BuySearchControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SellSearchControl.resx">
       <DependentUpon>SellSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuyListForm.resx">
+      <DependentUpon>BuyListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +110,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\AlaMungo.Data.Buy.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,9 +124,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AlaMungo.Data\AlaMungo.Data.csproj">
       <Project>{99de9617-6ded-45f7-ac47-ef683935314f}</Project>
