@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AlaMungo.Data
 {
-    public class EntityData<T> where T:class
+    public class EntityData<T> where T : class
     {
         public List<T> GetAll()
         {

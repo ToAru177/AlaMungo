@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AlaMungo.Data
 {
-    public class Class1
+    public partial class Buy
     {
+        public string Title { get; set; }
+
     }
 }
