@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace AlaMungo.Employee
 {
-    public partial class Form1 : Form
+    public partial class EmployeeInvoice : Form
     {
-        public Form1()
+        public EmployeeInvoice()
         {
             InitializeComponent();
+        }
+
+        private void EmployeeInvoice_Load(object sender, EventArgs e)
+        {
+            bdsInvoice.DataSource = Data.DB.Buy;
+
         }
     }
 }
