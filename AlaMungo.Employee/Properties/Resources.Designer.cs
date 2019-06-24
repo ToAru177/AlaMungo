@@ -81,12 +81,32 @@ namespace AlaMungo.Employee.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Book11 {
+            get {
+                object obj = ResourceManager.GetObject("Book11", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Delivery_Truck1 {
             get {
                 object obj = ResourceManager.GetObject("Delivery_Truck1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Delivery_Truck11 {
+            get {
+                object obj = ResourceManager.GetObject("Delivery_Truck11", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -101,12 +121,32 @@ namespace AlaMungo.Employee.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Exit11 {
+            get {
+                object obj = ResourceManager.GetObject("Exit11", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Purchase1 {
             get {
                 object obj = ResourceManager.GetObject("Purchase1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Purchase11 {
+            get {
+                object obj = ResourceManager.GetObject("Purchase11", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -127,6 +167,16 @@ namespace AlaMungo.Employee.Properties {
             get {
                 object obj = ResourceManager.GetObject("sale3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon sale31 {
+            get {
+                object obj = ResourceManager.GetObject("sale31", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

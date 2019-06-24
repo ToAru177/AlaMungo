@@ -124,20 +124,35 @@
   <data name="Book1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Book1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Book11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Book1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Delivery_Truck1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Delivery_Truck1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delivery_Truck11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delivery_Truck1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Exit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Exit11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Purchase1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Purchase1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purchase11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Purchase1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_icon-key_2867915.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sale3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sale3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sale31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sale3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_header-account-image-line_1540176.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

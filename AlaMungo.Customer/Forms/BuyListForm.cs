@@ -1,4 +1,5 @@
-﻿using AlaMungo.Data;
+﻿using AlaMungo.Customer.Properties;
+using AlaMungo.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace AlaMungo.Customer.Forms
         public BuyListForm()
         {
             InitializeComponent();
+            Icon = Resources.Purchase1;
         }
 
         private void BuyListForm_Load(object sender, EventArgs e)

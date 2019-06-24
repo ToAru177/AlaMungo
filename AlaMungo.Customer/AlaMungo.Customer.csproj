@@ -220,5 +220,20 @@
   <ItemGroup>
     <None Include="Resources\AlaMungoSmall.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery_Truck1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchase1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale3.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

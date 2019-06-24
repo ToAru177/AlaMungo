@@ -1,4 +1,5 @@
-﻿using AlaMungo.Data;
+﻿using AlaMungo.Customer.Properties;
+using AlaMungo.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace AlaMungo.Customer.Forms
             InitializeComponent();
 
             _usedBook = usedBook;
+            Icon = Resources.Purchase1;
         }
 
         private UsedBook _usedBook;
@@ -26,12 +28,14 @@ namespace AlaMungo.Customer.Forms
         {
             lblTitle.Text = _usedBook.BookTitle;
             lblWriter.Text = _usedBook.BookWriter;
-            lblPrice.Text = _usedBook.BookPrice.ToString() + "\\";
+            lblPrice.Text = _usedBook.BookPrice.ToString("C");
             lblQuality.Text = _usedBook.Quality;
-            //lblCount.Text = $"{} 권";
+           
 
             //pcbBookImage.Image = Image.FromFile(_usedBook.ImagePath);
             pcbBookImage.Image = Image.FromFile(@"D:\MetaBookImage\다시_태어난다면_한국에서_살겠습니까.PNG");
+            //pcbBookImage.BackgroundImageLayout = ImageLayout.Stretch; 
+            pcbBookImage.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void BtnExit_Click(object sender, EventArgs e)

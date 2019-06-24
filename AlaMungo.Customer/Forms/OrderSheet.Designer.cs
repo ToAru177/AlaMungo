@@ -125,7 +125,7 @@
             this.txbAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbAddress.Name = "txbAddress";
             this.txbAddress.Size = new System.Drawing.Size(280, 22);
-            this.txbAddress.TabIndex = 7;
+            this.txbAddress.TabIndex = 0;
             // 
             // txbSubAddress
             // 
@@ -133,7 +133,7 @@
             this.txbSubAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbSubAddress.Name = "txbSubAddress";
             this.txbSubAddress.Size = new System.Drawing.Size(280, 22);
-            this.txbSubAddress.TabIndex = 8;
+            this.txbSubAddress.TabIndex = 1;
             // 
             // label6
             // 
@@ -173,7 +173,7 @@
             this.btnCancle.Location = new System.Drawing.Point(503, 317);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.Size = new System.Drawing.Size(75, 23);
-            this.btnCancle.TabIndex = 12;
+            this.btnCancle.TabIndex = 3;
             this.btnCancle.Text = "취소";
             this.btnCancle.UseVisualStyleBackColor = true;
             this.btnCancle.Click += new System.EventHandler(this.BtnCancle_Click);
@@ -184,7 +184,7 @@
             this.btnBuy.Location = new System.Drawing.Point(407, 317);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(75, 23);
-            this.btnBuy.TabIndex = 13;
+            this.btnBuy.TabIndex = 2;
             this.btnBuy.Text = "결제";
             this.btnBuy.UseVisualStyleBackColor = true;
             this.btnBuy.Click += new System.EventHandler(this.BtnBuy_Click);
@@ -211,7 +211,7 @@
             this.Font = new System.Drawing.Font("Gulim", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "OrderSheet";
-            this.Text = "OrderSheet";
+            this.Text = "구매서";
             this.Load += new System.EventHandler(this.OrderSheet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

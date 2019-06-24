@@ -1,4 +1,5 @@
-﻿using AlaMungo.Data;
+﻿using AlaMungo.Customer.Properties;
+using AlaMungo.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace AlaMungo.Customer.Forms
         public OrderSheet(UsedBook usedBook)
         {
             InitializeComponent(); _usedBook = usedBook;
+            Icon = Resources.Purchase1;
         }
 
         private UsedBook _usedBook;
