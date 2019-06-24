@@ -17,7 +17,9 @@ namespace AlaMungo.Customer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            //Application.Run(new LoginForm());
+            Application.Run(new BuyListForm());
+            //Application.Run(new SellForm());
         }
     }
 }

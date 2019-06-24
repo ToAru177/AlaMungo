@@ -1,4 +1,4 @@
-﻿namespace AlaMungo.Customer.Forms
+﻿namespace AlaMungo.Customer
 {
     partial class SellForm
     {
