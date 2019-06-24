@@ -30,11 +30,6 @@ namespace AlaMungo.Customer.Controls
             cbbQuality.Enabled = chbQuality.Checked;
         }
 
-        public void LoadQualitys()
-        {
-            //bdsQuality.DataSource = DB.Quality.GetAll();
-        }
-
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             string title = txbTitle.Text;
