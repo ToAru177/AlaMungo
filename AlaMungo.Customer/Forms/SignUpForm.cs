@@ -29,7 +29,7 @@ namespace AlaMungo.Customer.Forms
             {
                 MessageBox.Show("아이디를 입력해주세요.", "알 림");
             }
-            else if (txbId.Text.Length <= 5)
+            else if (txbId.Text.Length <= 4)
             {
                 MessageBox.Show("적어도 다섯 글자 이상 이어야 합니다.", "알 림");
             }
@@ -52,11 +52,11 @@ namespace AlaMungo.Customer.Forms
             {
                 MessageBox.Show("비밀번호를 입력해주세요.", "알 림");
             }
-            else if (txbPw.Text.Equals(txbPwCheck.Text))
+            else if (txbPw.Text.Equals(txbPwCheck.Text) == false)
             {
                 MessageBox.Show("비밀번호가 일치 하지 않습니다.", "알 림");
             }
-            else if (txbPw.Text.Length <= 5)
+            else if (txbPw.Text.Length <= 4)
             {
                 MessageBox.Show("적어도 다섯 글자 이상 이어야 합니다.", "알 림");
             }
@@ -68,19 +68,21 @@ namespace AlaMungo.Customer.Forms
 
         private void BtnSignIn_Click(object sender, EventArgs e)
         {
-            if (ValidatePassword() == false)
-                return;
+           
 
             if (_signUpAble)
             {
                 Data.Customer customer = new Data.Customer();
                 customer.CustomerID = DB.Customer.GetCount()+1;
                 customer.LoginID = txbId.Text;
+                if (ValidatePassword() == false)
+                    return;
                 customer.PassWord = txbPw.Text;
                 customer.Address = txbAddress.Text;
                 customer.Email = txbEMail.Text;
                 customer.PhoneNumber = txbPhone.Text;
                 DB.Customer.Insert(customer);
+                MessageBox.Show("가입완료!", "알 림");
                 this.Close();
             }
             else

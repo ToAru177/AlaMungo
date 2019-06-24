@@ -19,9 +19,7 @@ namespace AlaMungo.Employee
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
 
-            //쓰레드 관련. 메인
-            EmployeeMainForm main = new EmployeeMainForm();
-            //Application.Run(main);
+            
         }
     }
 }

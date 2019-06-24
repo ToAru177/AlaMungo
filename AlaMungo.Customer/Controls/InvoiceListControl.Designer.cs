@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvList = new System.Windows.Forms.DataGridView();
+            this.buyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buyIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buyerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invoiceStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +66,11 @@
             this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvList.Size = new System.Drawing.Size(1028, 461);
             this.dgvList.TabIndex = 0;
+            this.dgvList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DgvList_CellFormatting);
+            // 
+            // buyBindingSource
+            // 
+            this.buyBindingSource.DataSource = typeof(AlaMungo.Data.Buy);
             // 
             // buyIDDataGridViewTextBoxColumn
             // 
@@ -105,13 +110,9 @@
             // invoiceStateDataGridViewTextBoxColumn
             // 
             this.invoiceStateDataGridViewTextBoxColumn.DataPropertyName = "InvoiceState";
-            this.invoiceStateDataGridViewTextBoxColumn.HeaderText = "InvoiceState";
+            this.invoiceStateDataGridViewTextBoxColumn.HeaderText = "배송 상태";
             this.invoiceStateDataGridViewTextBoxColumn.Name = "invoiceStateDataGridViewTextBoxColumn";
             this.invoiceStateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // buyBindingSource
-            // 
-            this.buyBindingSource.DataSource = typeof(AlaMungo.Data.Buy);
             // 
             // InvoiceListControl
             // 
