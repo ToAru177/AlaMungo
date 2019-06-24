@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.dgvBuy = new System.Windows.Forms.DataGridView();
             this.lblCount = new System.Windows.Forms.Label();
-            this.bdsBuy = new System.Windows.Forms.BindingSource(this.components);
-            this.BuyID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bdsUsedBook = new System.Windows.Forms.BindingSource(this.components);
+            this.usedBookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookWriter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BookQulity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qualityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsBuy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsUsedBook)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBuy
@@ -46,12 +46,12 @@
             this.dgvBuy.AutoGenerateColumns = false;
             this.dgvBuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BuyID,
+            this.usedBookIDDataGridViewTextBoxColumn,
             this.BookTitle,
             this.BookWriter,
-            this.BookQulity,
+            this.qualityDataGridViewTextBoxColumn,
             this.BookPrice});
-            this.dgvBuy.DataSource = this.bdsBuy;
+            this.dgvBuy.DataSource = this.bdsUsedBook;
             this.dgvBuy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBuy.Location = new System.Drawing.Point(0, 0);
             this.dgvBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -70,17 +70,15 @@
             this.lblCount.TabIndex = 2;
             this.lblCount.Text = "대기";
             // 
-            // bdsBuy
+            // bdsUsedBook
             // 
-            this.bdsBuy.DataSource = typeof(AlaMungo.Data.Buy);
+            this.bdsUsedBook.DataSource = typeof(AlaMungo.Data.UsedBook);
             // 
-            // BuyID
+            // usedBookIDDataGridViewTextBoxColumn
             // 
-            this.BuyID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.BuyID.DataPropertyName = "BuyID";
-            this.BuyID.HeaderText = "중고책 ID";
-            this.BuyID.Name = "BuyID";
-            this.BuyID.ReadOnly = true;
+            this.usedBookIDDataGridViewTextBoxColumn.DataPropertyName = "UsedBookID";
+            this.usedBookIDDataGridViewTextBoxColumn.HeaderText = "중고책 ID";
+            this.usedBookIDDataGridViewTextBoxColumn.Name = "usedBookIDDataGridViewTextBoxColumn";
             // 
             // BookTitle
             // 
@@ -99,17 +97,14 @@
             this.BookWriter.ReadOnly = true;
             this.BookWriter.Width = 150;
             // 
-            // BookQulity
+            // qualityDataGridViewTextBoxColumn
             // 
-            this.BookQulity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.BookQulity.DataPropertyName = "BookQulity";
-            this.BookQulity.HeaderText = "품질";
-            this.BookQulity.Name = "BookQulity";
-            this.BookQulity.ReadOnly = true;
+            this.qualityDataGridViewTextBoxColumn.DataPropertyName = "Quality";
+            this.qualityDataGridViewTextBoxColumn.HeaderText = "품질";
+            this.qualityDataGridViewTextBoxColumn.Name = "qualityDataGridViewTextBoxColumn";
             // 
             // BookPrice
             // 
-            this.BookPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.BookPrice.DataPropertyName = "BookPrice";
             this.BookPrice.HeaderText = "가격";
             this.BookPrice.Name = "BookPrice";
@@ -124,7 +119,7 @@
             this.Name = "BuyListControl";
             this.Size = new System.Drawing.Size(689, 491);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsBuy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsUsedBook)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,11 +129,11 @@
 
         private System.Windows.Forms.DataGridView dgvBuy;
         private System.Windows.Forms.Label lblCount;
-        private System.Windows.Forms.BindingSource bdsBuy;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BuyID;
+        private System.Windows.Forms.BindingSource bdsUsedBook;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usedBookIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookTitle;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookWriter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookQulity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qualityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookPrice;
     }
 }

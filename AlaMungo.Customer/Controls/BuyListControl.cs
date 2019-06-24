@@ -1,13 +1,6 @@
-﻿using System;
+﻿using AlaMungo.Data;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using AlaMungo.Data;
 
 namespace AlaMungo.Customer.Controls
 {
@@ -18,10 +11,10 @@ namespace AlaMungo.Customer.Controls
             InitializeComponent();
         }
 
-        public void SetDataSource(List<Buy> buys)
+        public void SetDataSource(List<UsedBook> usedBooks)
         {
-            bdsBuy.DataSource = buys;
-            lblCount.Text = $"총 {buys.Count} 건 입니다.";
+            bdsUsedBook.DataSource = usedBooks;
+            lblCount.Text = $"총 {usedBooks.Count} 건 입니다.";
         }
     }
 }

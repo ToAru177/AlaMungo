@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AlaMungo.Customer.Controls
@@ -19,6 +12,7 @@ namespace AlaMungo.Customer.Controls
             cbbQuality.Items.Add("B");
             cbbQuality.Items.Add("C");
             cbbQuality.Items.Add("F");
+            
         }
 
         private void ChbTitle_CheckedChanged(object sender, EventArgs e)
@@ -46,6 +40,10 @@ namespace AlaMungo.Customer.Controls
             string title = txbTitle.Text;
             string writer = txbWriter.Text;
             string quality = cbbQuality.Text;
+
+            if(cbbQuality.Enabled == false)
+                quality = "";
+
 
             OnSearchButtonClicked(title, writer, quality);
         }

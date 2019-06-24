@@ -25,8 +25,8 @@ namespace AlaMungo.Customer
 
         private void UscSearch_SearchButtonClicked(object sender, Controls.BuySearchControl.SearchButtonClickedEventArgs e)
         {
-            var buys = DB.Buy.Search(e.Title, e.Writer, e.Quality);
-            uscList.SetDataSource(buys);
+            var usedBooks = DB.UsedBook.Search(e.Title, e.Writer, e.Quality);
+            uscList.SetDataSource(usedBooks);
         }
 
         private void Button1_Click(object sender, EventArgs e)
