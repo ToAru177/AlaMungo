@@ -127,6 +127,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\BuyListControl.resx">
+      <DependentUpon>BuyListControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\BuySearchControl.resx">
       <DependentUpon>BuySearchControl.cs</DependentUpon>
     </EmbeddedResource>

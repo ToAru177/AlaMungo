@@ -25,5 +25,10 @@ namespace AlaMungo.Employee.Forms
             lblSellCount.Text = $"{sell.Count()} 건";
             lblBuyCount.Text = $"{buy.Count()} 건";
         }
+
+        private void ToolStripButton5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

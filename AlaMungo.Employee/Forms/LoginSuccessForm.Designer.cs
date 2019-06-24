@@ -129,7 +129,7 @@
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(55, 24);
             this.toolStripButton5.Text = "종료";
-            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            this.toolStripButton5.Click += new System.EventHandler(this.ToolStripButton5_Click);
             // 
             // btnLogOut
             // 

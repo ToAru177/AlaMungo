@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvBuy = new System.Windows.Forms.DataGridView();
-            this.lblCount = new System.Windows.Forms.Label();
-            this.bdsUsedBook = new System.Windows.Forms.BindingSource(this.components);
             this.usedBookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookWriter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qualityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bdsUsedBook = new System.Windows.Forms.BindingSource(this.components);
+            this.lblCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsUsedBook)).BeginInit();
             this.SuspendLayout();
@@ -59,20 +59,6 @@
             this.dgvBuy.RowTemplate.Height = 27;
             this.dgvBuy.Size = new System.Drawing.Size(689, 491);
             this.dgvBuy.TabIndex = 1;
-            // 
-            // lblCount
-            // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblCount.Location = new System.Drawing.Point(0, 479);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(29, 12);
-            this.lblCount.TabIndex = 2;
-            this.lblCount.Text = "대기";
-            // 
-            // bdsUsedBook
-            // 
-            this.bdsUsedBook.DataSource = typeof(AlaMungo.Data.UsedBook);
             // 
             // usedBookIDDataGridViewTextBoxColumn
             // 
@@ -109,6 +95,20 @@
             this.BookPrice.HeaderText = "가격";
             this.BookPrice.Name = "BookPrice";
             this.BookPrice.ReadOnly = true;
+            // 
+            // bdsUsedBook
+            // 
+            this.bdsUsedBook.DataSource = typeof(AlaMungo.Data.UsedBook);
+            // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblCount.Location = new System.Drawing.Point(0, 479);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(29, 12);
+            this.lblCount.TabIndex = 2;
+            this.lblCount.Text = "대기";
             // 
             // BuyListControl
             // 
