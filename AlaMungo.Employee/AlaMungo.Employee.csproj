@@ -95,6 +95,12 @@
     <Compile Include="Forms\EmployeeMainForm.Designer.cs">
       <DependentUpon>EmployeeMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\LoginSuccessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginSuccessForm.Designer.cs">
+      <DependentUpon>LoginSuccessForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\BuySearchControl.resx">
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginSuccessForm.resx">
+      <DependentUpon>LoginSuccessForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,6 +169,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_icon-key_2867915.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery_Truck1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

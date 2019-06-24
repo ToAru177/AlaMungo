@@ -79,9 +79,12 @@
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "검색";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // cbbQuality
             // 
+            this.cbbQuality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbQuality.Enabled = false;
             this.cbbQuality.FormattingEnabled = true;
             this.cbbQuality.Location = new System.Drawing.Point(433, 17);
             this.cbbQuality.Name = "cbbQuality";
@@ -96,6 +99,7 @@
             this.chbQuality.Size = new System.Drawing.Size(15, 14);
             this.chbQuality.TabIndex = 9;
             this.chbQuality.UseVisualStyleBackColor = true;
+            this.chbQuality.CheckedChanged += new System.EventHandler(this.ChbQuality_CheckedChanged);
             // 
             // label2
             // 
@@ -108,6 +112,7 @@
             // 
             // txbWriter
             // 
+            this.txbWriter.Enabled = false;
             this.txbWriter.Location = new System.Drawing.Point(259, 17);
             this.txbWriter.Name = "txbWriter";
             this.txbWriter.Size = new System.Drawing.Size(100, 21);
@@ -115,6 +120,7 @@
             // 
             // txbTitle
             // 
+            this.txbTitle.Enabled = false;
             this.txbTitle.Location = new System.Drawing.Point(86, 17);
             this.txbTitle.Name = "txbTitle";
             this.txbTitle.Size = new System.Drawing.Size(100, 21);
@@ -128,6 +134,7 @@
             this.chbWriter.Size = new System.Drawing.Size(15, 14);
             this.chbWriter.TabIndex = 5;
             this.chbWriter.UseVisualStyleBackColor = true;
+            this.chbWriter.CheckedChanged += new System.EventHandler(this.ChbWriter_CheckedChanged);
             // 
             // label4
             // 
@@ -146,6 +153,7 @@
             this.chbTitle.Size = new System.Drawing.Size(15, 14);
             this.chbTitle.TabIndex = 3;
             this.chbTitle.UseVisualStyleBackColor = true;
+            this.chbTitle.CheckedChanged += new System.EventHandler(this.ChbTitle_CheckedChanged);
             // 
             // BuySearchControl
             // 

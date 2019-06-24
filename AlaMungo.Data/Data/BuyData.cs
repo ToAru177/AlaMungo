@@ -67,5 +67,46 @@ namespace AlaMungo.Data
 
             }
         }
+
+        public List<Buy> Search(string title, string writer, string quality)
+        {
+            using (YesAlaMungoEntities context = DbContextFactory.Create())
+            {
+                var query = from x in context.UsedBooks
+                            from y in context.Buys
+                            select new
+                            {
+                                Buy = y,
+                                UsedBook = x,
+                                BuyerId = y.Customer.LoginID,
+                                BookTitle = x.MetaDataBook.Title,
+                                BookWriter = x.MetaDataBook.Writer,
+                                BookPrice = x.MetaDataBook.Price,
+                                BookQuality = x.Quality
+                            };
+
+                if (string.IsNullOrEmpty(title) == false)
+                    query = query.Where(x => x.Buy.BookTitle.Contains(title));
+
+                if (string.IsNullOrEmpty(writer) == false)
+                    query = query.Where(x => x.Buy.BookWriter.Contains(writer));
+
+                if (string.IsNullOrEmpty(quality) == false)
+                    query = query.Where(x => x.Buy.BookQulity.Contains(quality));
+
+                var list = query.ToList();
+
+                foreach (var item in list)
+                {
+                    item.Buy.BookTitle = item.BookTitle;
+                    item.Buy.BookWriter = item.BookWriter;
+                    item.Buy.BookQulity = item.BookQuality;
+                    item.Buy.BookPrice = item.BookPrice;
+                    item.Buy.BuyerId = item.BuyerId;
+                }
+
+                return list.ConvertAll(x => x.Buy);
+            }
+        }
     }
 }
