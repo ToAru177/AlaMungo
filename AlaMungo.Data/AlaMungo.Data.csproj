@@ -69,6 +69,7 @@
       <DependentUpon>YesAlaMungo.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Buy.cs" />
+    <Compile Include="Entities\UsedBook.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="MetaDataBook.cs">
       <DependentUpon>YesAlaMungo.tt</DependentUpon>

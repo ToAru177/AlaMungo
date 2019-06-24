@@ -16,23 +16,22 @@ namespace AlaMungo.Customer
         public BuyListForm()
         {
             InitializeComponent();
+        }
 
+        private void BuyListForm_Load(object sender, EventArgs e)
+        {
+            //uscSearch.LoadQualitys();
+        }
+
+        private void UscSearch_SearchButtonClicked(object sender, Controls.BuySearchControl.SearchButtonClickedEventArgs e)
+        {
+            var usedBooks = DB.UsedBook.Search(e.Title, e.Writer, e.Quality);
+            uscList.SetDataSource(usedBooks);
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void BuyListForm_Load(object sender, EventArgs e)
-        {
-            uscSearch.LoadQualitys();
-        }
-
-        private void UscSearch_SearchButtonClicked(object sender, Controls.BuySearchControl.SearchButtonClickedEventArgs e)
-        {
-            var buys = DB.Buy.Search(e.Title, e.Writer, e.QualityId);
-            uscList.SetDataSource(buys);
         }
     }
 }
