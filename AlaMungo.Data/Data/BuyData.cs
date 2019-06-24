@@ -8,7 +8,8 @@ namespace AlaMungo.Data
     public class BuyData : EntityData<Buy>
     {
 
-        public List<Buy> Search(string title,DateTime? fromDate,DateTime? ToDate)
+        public List<Buy> Search(string cusId,
+            string title,DateTime? fromDate,DateTime? ToDate)
         {
             using (YesAlaMungoEntities context = new YesAlaMungoEntities())
             {
@@ -39,9 +40,13 @@ namespace AlaMungo.Data
                 //}).ToList();
 
 
+
                 //buy 에서 title 과 customerId만 빼오면되는데.
+
+                string tempId = "admin";
                 var query = from x in context.Buys
                     join y in context.UsedBooks on x.BuyID equals y.UsedBookID
+                    where x.Customer.LoginID.Equals(tempId)
                     select new
                     {
                         Buy = x,
@@ -52,7 +57,7 @@ namespace AlaMungo.Data
 
                 foreach (var item in list)
                 {
-                    item.Buy.Title = item.Title;
+                    item.Buy.Title = item.Title;                   
                 }
 
 

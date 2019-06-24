@@ -10,7 +10,7 @@ namespace AlaMungo.Data
     {
         public enum InvoiceState
         {
-            Ready, ing, complate
+            Ready = 0, ing, complate
         }
     }
 }

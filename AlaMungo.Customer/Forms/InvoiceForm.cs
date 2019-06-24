@@ -14,14 +14,21 @@ namespace AlaMungo.Customer.Forms
 {
     public partial class InvoiceForm : Form
     {
+        private string _cusId;
+
         public InvoiceForm()
         {
             InitializeComponent();
         }
+        public InvoiceForm(string customerId)
+        {
+            InitializeComponent();
+            _cusId = customerId;
+        }
 
         private void UscSearch_SearchButtonClicked(object sender, Controls.InvoiceSearchControl.SearchButtonClickedEventArgs e)
         {
-           List<Buy> buys = DB.Buy.Search(e.Title, e.FromDate, e.ToDate);
+           List<Buy> buys = DB.Buy.Search(_cusId,e.Title, e.FromDate, e.ToDate);
            uscList.SetDateSource(buys);
         }
     }

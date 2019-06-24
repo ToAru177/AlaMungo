@@ -39,6 +39,7 @@
             this.chbFromDate = new System.Windows.Forms.CheckBox();
             this.chbTitle = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,10 +161,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "책 제목 :";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(86, 60);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.TabIndex = 10;
+            // 
             // InvoiceSearchControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "InvoiceSearchControl";
             this.Size = new System.Drawing.Size(633, 83);
@@ -185,5 +195,6 @@
         private System.Windows.Forms.DateTimePicker dtpToDate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox chbToDate;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

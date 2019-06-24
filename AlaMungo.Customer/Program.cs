@@ -17,7 +17,7 @@ namespace AlaMungo.Customer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new InvoiceForm());
         }
     }
 }
