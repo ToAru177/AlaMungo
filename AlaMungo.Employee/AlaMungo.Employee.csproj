@@ -76,6 +76,12 @@
     <Compile Include="Controls\UsedBookSearchControl.Designer.cs">
       <DependentUpon>UsedBookSearchControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\LoginSuccessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginSuccessForm.Designer.cs">
+      <DependentUpon>LoginSuccessForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\BuySearchControl.resx">
@@ -93,6 +99,9 @@
     <EmbeddedResource Include="Controls\UsedBookSearchControl.resx">
       <DependentUpon>UsedBookSearchControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginSuccessForm.resx">
+      <DependentUpon>LoginSuccessForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -101,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\AlaMungo.Data.Buy.datasource" />
     <None Include="Properties\Settings.settings">
@@ -116,14 +126,27 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AlaMungo.Data\AlaMungo.Data.csproj">
       <Project>{99de9617-6ded-45f7-ac47-ef683935314f}</Project>
       <Name>AlaMungo.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery_Truck1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

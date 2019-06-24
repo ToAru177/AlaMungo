@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bdsBuy = new System.Windows.Forms.BindingSource(this.components);
-            this.lblCount = new System.Windows.Forms.Label();
             this.buyIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Writer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qulity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bdsBuy = new System.Windows.Forms.BindingSource(this.components);
+            this.lblCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsBuy)).BeginInit();
             this.SuspendLayout();
@@ -54,24 +54,11 @@
             this.dataGridView1.DataSource = this.bdsBuy;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1036, 522);
+            this.dataGridView1.Size = new System.Drawing.Size(906, 418);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // bdsBuy
-            // 
-            this.bdsBuy.DataSource = typeof(AlaMungo.Data.Buy);
-            // 
-            // lblCount
-            // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblCount.Location = new System.Drawing.Point(0, 507);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(37, 15);
-            this.lblCount.TabIndex = 1;
-            this.lblCount.Text = "대기";
             // 
             // buyIDDataGridViewTextBoxColumn
             // 
@@ -117,14 +104,29 @@
             this.Price.ReadOnly = true;
             this.Price.Width = 150;
             // 
+            // bdsBuy
+            // 
+            this.bdsBuy.DataSource = typeof(AlaMungo.Data.Buy);
+            // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblCount.Location = new System.Drawing.Point(0, 406);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(29, 12);
+            this.lblCount.TabIndex = 1;
+            this.lblCount.Text = "대기";
+            // 
             // BuyListControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BuyListControl";
-            this.Size = new System.Drawing.Size(1036, 522);
+            this.Size = new System.Drawing.Size(906, 418);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsBuy)).EndInit();
             this.ResumeLayout(false);

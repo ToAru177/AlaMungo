@@ -65,18 +65,6 @@
     <Compile Include="Controls\BuySearchControl.Designer.cs">
       <DependentUpon>BuySearchControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\InvoiceSearchControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\InvoiceSearchControl.Designer.cs">
-      <DependentUpon>InvoiceSearchControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\SellSearchControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\SellSearchControl.Designer.cs">
-      <DependentUpon>SellSearchControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\BuyListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,12 +78,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\BuySearchControl.resx">
       <DependentUpon>BuySearchControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\InvoiceSearchControl.resx">
-      <DependentUpon>InvoiceSearchControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\SellSearchControl.resx">
-      <DependentUpon>SellSearchControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BuyListForm.resx">
       <DependentUpon>BuyListForm.cs</DependentUpon>

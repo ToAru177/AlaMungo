@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AlaMungo.Data;
 
 namespace AlaMungo.Customer.Controls
 {
@@ -17,6 +18,12 @@ namespace AlaMungo.Customer.Controls
             InitializeComponent();
         }
 
-      
+        public void SetDataSource(List<Buy> buys)
+        {
+            bdsBuy.DataSource = buys;
+            lblCount.Text = $"총 {buys.Count} 건 입니다.";
+        }
+
+
     }
 }

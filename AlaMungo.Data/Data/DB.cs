@@ -13,6 +13,6 @@ namespace AlaMungo.Data
         public static MetaDataBookData MetaData { get; } = new MetaDataBookData();
         public static SellData Sell { get; } = new SellData();
         public static BuyData Buy { get; } = new BuyData();
-
+        public static UsedBookData UsedBook { get; } = new UsedBookData();
     }
 }
