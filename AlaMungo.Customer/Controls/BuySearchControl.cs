@@ -16,6 +16,9 @@ namespace AlaMungo.Customer.Controls
         {
             InitializeComponent();
             cbbQuality.Items.Add("A");
+            cbbQuality.Items.Add("B");
+            cbbQuality.Items.Add("C");
+            cbbQuality.Items.Add("F");
         }
 
         private void ChbTitle_CheckedChanged(object sender, EventArgs e)
