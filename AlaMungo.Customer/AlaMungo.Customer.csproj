@@ -53,12 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\BuySearchControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\BuySearchControl.Designer.cs">
-      <DependentUpon>BuySearchControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\InvoiceListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,9 +109,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\BuySearchControl.resx">
-      <DependentUpon>BuySearchControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\InvoiceListControl.resx">
       <DependentUpon>InvoiceListControl.cs</DependentUpon>
     </EmbeddedResource>
