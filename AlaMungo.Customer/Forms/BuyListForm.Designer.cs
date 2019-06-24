@@ -1,4 +1,4 @@
-﻿namespace AlaMungo.Customer
+﻿namespace AlaMungo.Customer.Forms
 {
     partial class BuyListForm
     {
@@ -67,6 +67,7 @@
             this.uscList.Name = "uscList";
             this.uscList.Size = new System.Drawing.Size(800, 347);
             this.uscList.TabIndex = 0;
+            this.uscList.RowDoubleClicked += new System.EventHandler<AlaMungo.Customer.Controls.BuyListControl.RowDoubleClickedEventArgs>(this.UscList_RowDoubleClicked);
             // 
             // uscSearch
             // 
@@ -86,7 +87,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.uscSearch);
             this.Name = "BuyListForm";
-            this.Text = "BuyListForm";
+            this.Text = "구매";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

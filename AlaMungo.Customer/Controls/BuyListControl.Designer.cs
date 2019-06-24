@@ -29,50 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dgvBuy = new System.Windows.Forms.DataGridView();
-            this.lblCount = new System.Windows.Forms.Label();
-            this.bdsUsedBook = new System.Windows.Forms.BindingSource(this.components);
+            this.dgvList = new System.Windows.Forms.DataGridView();
             this.usedBookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookWriter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qualityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBuy)).BeginInit();
+            this.bdsUsedBook = new System.Windows.Forms.BindingSource(this.components);
+            this.lblCount = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsUsedBook)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvBuy
+            // dgvList
             // 
-            this.dgvBuy.AutoGenerateColumns = false;
-            this.dgvBuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvList.AutoGenerateColumns = false;
+            this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.usedBookIDDataGridViewTextBoxColumn,
             this.BookTitle,
             this.BookWriter,
             this.qualityDataGridViewTextBoxColumn,
             this.BookPrice});
-            this.dgvBuy.DataSource = this.bdsUsedBook;
-            this.dgvBuy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvBuy.Location = new System.Drawing.Point(0, 0);
-            this.dgvBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvBuy.Name = "dgvBuy";
-            this.dgvBuy.RowTemplate.Height = 27;
-            this.dgvBuy.Size = new System.Drawing.Size(689, 491);
-            this.dgvBuy.TabIndex = 1;
-            // 
-            // lblCount
-            // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblCount.Location = new System.Drawing.Point(0, 479);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(29, 12);
-            this.lblCount.TabIndex = 2;
-            this.lblCount.Text = "대기";
-            // 
-            // bdsUsedBook
-            // 
-            this.bdsUsedBook.DataSource = typeof(AlaMungo.Data.UsedBook);
+            this.dgvList.DataSource = this.bdsUsedBook;
+            this.dgvList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvList.Location = new System.Drawing.Point(0, 0);
+            this.dgvList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvList.Name = "dgvList";
+            this.dgvList.RowTemplate.Height = 27;
+            this.dgvList.Size = new System.Drawing.Size(689, 491);
+            this.dgvList.TabIndex = 1;
+            this.dgvList.DoubleClick += new System.EventHandler(this.DgvList_DoubleClick);
             // 
             // usedBookIDDataGridViewTextBoxColumn
             // 
@@ -110,15 +97,29 @@
             this.BookPrice.Name = "BookPrice";
             this.BookPrice.ReadOnly = true;
             // 
+            // bdsUsedBook
+            // 
+            this.bdsUsedBook.DataSource = typeof(AlaMungo.Data.UsedBook);
+            // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblCount.Location = new System.Drawing.Point(0, 479);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(29, 12);
+            this.lblCount.TabIndex = 2;
+            this.lblCount.Text = "대기";
+            // 
             // BuyListControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblCount);
-            this.Controls.Add(this.dgvBuy);
+            this.Controls.Add(this.dgvList);
             this.Name = "BuyListControl";
             this.Size = new System.Drawing.Size(689, 491);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBuy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsUsedBook)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,7 +128,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvBuy;
+        private System.Windows.Forms.DataGridView dgvList;
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.BindingSource bdsUsedBook;
         private System.Windows.Forms.DataGridViewTextBoxColumn usedBookIDDataGridViewTextBoxColumn;

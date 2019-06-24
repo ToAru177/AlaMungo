@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AlaMungo.Customer
+namespace AlaMungo.Customer.Forms
 {
     public partial class BuyListForm : Form
     {
@@ -32,6 +32,16 @@ namespace AlaMungo.Customer
         private void Button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void UscList_RowDoubleClicked(object sender, Controls.BuyListControl.RowDoubleClickedEventArgs e)
+        {
+            UsedBook usedBook = e.UsedBook;
+            if (usedBook == null)  // 형 변환 실패...
+                return;
+
+            UsedBookForm form = new UsedBookForm(usedBook);
+            form.ShowDialog();
         }
     }
 }

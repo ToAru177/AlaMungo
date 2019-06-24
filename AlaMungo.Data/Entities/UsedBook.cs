@@ -11,5 +11,6 @@ namespace AlaMungo.Data
         public string BookTitle { get; set; }   // 책 제목
         public string BookWriter { get; set; }  // 저자
         public int BookPrice { get; set; }      // 가격
+        public string ImagePath { get; set; }
     }
 }

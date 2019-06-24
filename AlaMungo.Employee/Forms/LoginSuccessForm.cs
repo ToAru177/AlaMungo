@@ -17,6 +17,7 @@ namespace AlaMungo.Employee.Forms
         {
             InitializeComponent();
         }
+
         private void EmployeeMainForm_Load(object sender, EventArgs e)
         {
             var buy = DB.Buy.GetAll().Where(x => x.InvoiceState == 0);
@@ -30,7 +31,12 @@ namespace AlaMungo.Employee.Forms
             lblBuyCount.Text = $"{buy.Count()} 건";
         }
 
-        private void toolStripButton5_Click(object sender, EventArgs e)
+        private void TsbExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BtnLogOut_Click(object sender, EventArgs e)
         {
             Close();
         }

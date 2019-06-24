@@ -19,6 +19,7 @@ namespace AlaMungo.Data
                                 BookTitle = x.MetaDataBook.Title,
                                 BookWriter = x.MetaDataBook.Writer,
                                 BookPrice = x.MetaDataBook.Price,
+                                //ImagePath = x.MetaDataBook.Image
                             };
 
                 if (string.IsNullOrEmpty(title) == false)
@@ -37,7 +38,7 @@ namespace AlaMungo.Data
                     item.UsedBook.BookTitle = item.BookTitle;
                     item.UsedBook.BookWriter = item.BookWriter;
                     item.UsedBook.BookPrice = item.BookPrice;
-                    
+                    //item.UsedBook.ImagePath = item.ImagePath;
                 }
 
                 return list.ConvertAll(x => x.UsedBook);

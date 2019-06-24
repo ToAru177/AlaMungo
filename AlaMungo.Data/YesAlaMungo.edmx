@@ -253,7 +253,7 @@
           <Property Name="Writer" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Publisher" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Price" Type="Int32" Nullable="false" />
-          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="image" Type="Binary" FixedLength="false" MaxLength="Max" />
           <NavigationProperty Name="UsedBooks" Relationship="Self.FK_UsedBook_MetaDataBook" FromRole="MetaDataBook" ToRole="UsedBook" />
         </EntityType>
         <EntityType Name="Sell">

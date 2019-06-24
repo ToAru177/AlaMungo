@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.tsbUsedBook = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.tsbBuy = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.tsbSell = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.tsbInvoice = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.tsbExit = new System.Windows.Forms.ToolStripButton();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.lblSellCount = new System.Windows.Forms.Label();
             this.lblCustomerCount = new System.Windows.Forms.Label();
@@ -54,82 +54,82 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.tsbUsedBook,
             this.toolStripSeparator1,
-            this.toolStripButton2,
+            this.tsbBuy,
             this.toolStripSeparator2,
-            this.toolStripButton3,
+            this.tsbSell,
             this.toolStripSeparator3,
-            this.toolStripButton4,
+            this.tsbInvoice,
             this.toolStripSeparator4,
-            this.toolStripButton5});
+            this.tsbExit});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(787, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // tsbUsedBook
             // 
-            this.toolStripButton1.Image = global::AlaMungo.Employee.Properties.Resources.Book1;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(55, 24);
-            this.toolStripButton1.Text = "중고";
+            this.tsbUsedBook.Image = global::AlaMungo.Employee.Properties.Resources.Book1;
+            this.tsbUsedBook.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbUsedBook.Name = "tsbUsedBook";
+            this.tsbUsedBook.Size = new System.Drawing.Size(55, 24);
+            this.tsbUsedBook.Text = "중고";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripButton2
+            // tsbBuy
             // 
-            this.toolStripButton2.Image = global::AlaMungo.Employee.Properties.Resources.Purchase1;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(55, 24);
-            this.toolStripButton2.Text = "구매";
-            this.toolStripButton2.ToolTipText = "구매";
+            this.tsbBuy.Image = global::AlaMungo.Employee.Properties.Resources.Purchase1;
+            this.tsbBuy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbBuy.Name = "tsbBuy";
+            this.tsbBuy.Size = new System.Drawing.Size(55, 24);
+            this.tsbBuy.Text = "구매";
+            this.tsbBuy.ToolTipText = "구매";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripButton3
+            // tsbSell
             // 
-            this.toolStripButton3.Image = global::AlaMungo.Employee.Properties.Resources.sale3;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(55, 24);
-            this.toolStripButton3.Text = "판매";
+            this.tsbSell.Image = global::AlaMungo.Employee.Properties.Resources.sale3;
+            this.tsbSell.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSell.Name = "tsbSell";
+            this.tsbSell.Size = new System.Drawing.Size(55, 24);
+            this.tsbSell.Text = "판매";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripButton4
+            // tsbInvoice
             // 
-            this.toolStripButton4.Image = global::AlaMungo.Employee.Properties.Resources.Delivery_Truck1;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(55, 24);
-            this.toolStripButton4.Text = "운송";
+            this.tsbInvoice.Image = global::AlaMungo.Employee.Properties.Resources.Delivery_Truck1;
+            this.tsbInvoice.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbInvoice.Name = "tsbInvoice";
+            this.tsbInvoice.Size = new System.Drawing.Size(55, 24);
+            this.tsbInvoice.Text = "운송";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripButton5
+            // tsbExit
             // 
-            this.toolStripButton5.Image = global::AlaMungo.Employee.Properties.Resources.Exit1;
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(55, 24);
-            this.toolStripButton5.Text = "종료";
-            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            this.tsbExit.Image = global::AlaMungo.Employee.Properties.Resources.Exit1;
+            this.tsbExit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbExit.Name = "tsbExit";
+            this.tsbExit.Size = new System.Drawing.Size(55, 24);
+            this.tsbExit.Text = "종료";
+            this.tsbExit.Click += new System.EventHandler(this.TsbExit_Click);
             // 
             // btnLogOut
             // 
@@ -141,6 +141,7 @@
             this.btnLogOut.TabIndex = 2;
             this.btnLogOut.Text = "로그아웃";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // lblSellCount
             // 
@@ -243,6 +244,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "LoginSuccessForm";
             this.Text = "LoginSuccessForm";
+            this.Load += new System.EventHandler(this.EmployeeMainForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -253,15 +255,15 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton tsbUsedBook;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton tsbBuy;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton tsbSell;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton tsbInvoice;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton tsbExit;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Label lblSellCount;
         private System.Windows.Forms.Label lblCustomerCount;

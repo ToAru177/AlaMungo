@@ -17,11 +17,7 @@ namespace AlaMungo.Employee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
-
-            //쓰레드 관련. 메인
-            EmployeeMainForm main = new EmployeeMainForm();
-            //Application.Run(main);
+            Application.Run(new LoginSuccessForm());
         }
     }
 }
