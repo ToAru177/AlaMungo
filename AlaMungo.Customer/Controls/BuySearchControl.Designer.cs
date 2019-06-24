@@ -45,9 +45,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 20);
+            this.label1.Location = new System.Drawing.Point(31, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "책 제목 :";
             // 
@@ -65,95 +65,112 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(666, 48);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(761, 60);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
             // btnSearch
             // 
             this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.Location = new System.Drawing.Point(585, 17);
+            this.btnSearch.Location = new System.Drawing.Point(669, 21);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(86, 29);
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "검색";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // cbbQuality
             // 
+            this.cbbQuality.Enabled = false;
             this.cbbQuality.FormattingEnabled = true;
-            this.cbbQuality.Location = new System.Drawing.Point(433, 17);
+            this.cbbQuality.Location = new System.Drawing.Point(495, 21);
+            this.cbbQuality.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbQuality.Name = "cbbQuality";
-            this.cbbQuality.Size = new System.Drawing.Size(102, 20);
+            this.cbbQuality.Size = new System.Drawing.Size(116, 23);
             this.cbbQuality.TabIndex = 10;
             // 
             // chbQuality
             // 
             this.chbQuality.AutoSize = true;
-            this.chbQuality.Location = new System.Drawing.Point(369, 20);
+            this.chbQuality.Location = new System.Drawing.Point(422, 25);
+            this.chbQuality.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chbQuality.Name = "chbQuality";
-            this.chbQuality.Size = new System.Drawing.Size(15, 14);
+            this.chbQuality.Size = new System.Drawing.Size(18, 17);
             this.chbQuality.TabIndex = 9;
             this.chbQuality.UseVisualStyleBackColor = true;
+            this.chbQuality.CheckedChanged += new System.EventHandler(this.ChbQuality_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(390, 20);
+            this.label2.Location = new System.Drawing.Point(446, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 12);
+            this.label2.Size = new System.Drawing.Size(47, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "품질 :";
             // 
             // txbWriter
             // 
-            this.txbWriter.Location = new System.Drawing.Point(259, 17);
+            this.txbWriter.Enabled = false;
+            this.txbWriter.Location = new System.Drawing.Point(296, 21);
+            this.txbWriter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbWriter.Name = "txbWriter";
-            this.txbWriter.Size = new System.Drawing.Size(100, 21);
+            this.txbWriter.Size = new System.Drawing.Size(114, 25);
             this.txbWriter.TabIndex = 7;
             // 
             // txbTitle
             // 
-            this.txbTitle.Location = new System.Drawing.Point(86, 17);
+            this.txbTitle.Enabled = false;
+            this.txbTitle.Location = new System.Drawing.Point(98, 21);
+            this.txbTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbTitle.Name = "txbTitle";
-            this.txbTitle.Size = new System.Drawing.Size(100, 21);
+            this.txbTitle.Size = new System.Drawing.Size(114, 25);
             this.txbTitle.TabIndex = 6;
             // 
             // chbWriter
             // 
             this.chbWriter.AutoSize = true;
-            this.chbWriter.Location = new System.Drawing.Point(195, 20);
+            this.chbWriter.Location = new System.Drawing.Point(223, 25);
+            this.chbWriter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chbWriter.Name = "chbWriter";
-            this.chbWriter.Size = new System.Drawing.Size(15, 14);
+            this.chbWriter.Size = new System.Drawing.Size(18, 17);
             this.chbWriter.TabIndex = 5;
             this.chbWriter.UseVisualStyleBackColor = true;
+            this.chbWriter.CheckedChanged += new System.EventHandler(this.ChbWriter_CheckedChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(216, 20);
+            this.label4.Location = new System.Drawing.Point(247, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 12);
+            this.label4.Size = new System.Drawing.Size(47, 15);
             this.label4.TabIndex = 4;
             this.label4.Text = "저자 :";
             // 
             // chbTitle
             // 
             this.chbTitle.AutoSize = true;
-            this.chbTitle.Location = new System.Drawing.Point(6, 20);
+            this.chbTitle.Location = new System.Drawing.Point(7, 25);
+            this.chbTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chbTitle.Name = "chbTitle";
-            this.chbTitle.Size = new System.Drawing.Size(15, 14);
+            this.chbTitle.Size = new System.Drawing.Size(18, 17);
             this.chbTitle.TabIndex = 3;
             this.chbTitle.UseVisualStyleBackColor = true;
+            this.chbTitle.CheckedChanged += new System.EventHandler(this.ChbTitle_CheckedChanged);
             // 
             // BuySearchControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BuySearchControl";
-            this.Size = new System.Drawing.Size(666, 55);
+            this.Size = new System.Drawing.Size(761, 69);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

@@ -83,17 +83,11 @@
     <Compile Include="Controls\UsedBookSearchControl.Designer.cs">
       <DependentUpon>UsedBookSearchControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LoginForm.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EmployeeMainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\LoginSuccessForm.Designer.cs">
+      <DependentUpon>LoginSuccessForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UsedBookSearchControl.resx">
       <DependentUpon>UsedBookSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginSuccessForm.resx">
+      <DependentUpon>LoginSuccessForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -137,26 +134,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AlaMungo.Data\AlaMungo.Data.csproj">
       <Project>{99de9617-6ded-45f7-ac47-ef683935314f}</Project>
       <Name>AlaMungo.Data</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AlaMungoMain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconfinder_icon_key_2867915_5SG_icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconfinder_header_account_image_line_1540176_1Do_icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconfinder_header-account-image-line_1540176.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconfinder_icon-key_2867915.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

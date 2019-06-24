@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
+using AlaMungo.Data;
 
 namespace AlaMungo.Customer.Controls
 {
-    public partial class SellSearchControl : UserControl
+    public partial class BuyListControl : UserControl
     {
-        public SellSearchControl()
+        public BuyListControl()
         {
             InitializeComponent();
         }
