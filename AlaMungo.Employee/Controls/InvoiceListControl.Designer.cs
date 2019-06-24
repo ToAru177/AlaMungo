@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bdsBuy = new System.Windows.Forms.BindingSource(this.components);
             this.buyIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invoiceStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bdsBuy = new System.Windows.Forms.BindingSource(this.components);
             this.lblCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsBuy)).BeginInit();
@@ -55,10 +55,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(589, 384);
             this.dataGridView1.TabIndex = 0;
             // 
-            // bdsBuy
-            // 
-            this.bdsBuy.DataSource = typeof(AlaMungo.Data.Buy);
-            // 
             // buyIDDataGridViewTextBoxColumn
             // 
             this.buyIDDataGridViewTextBoxColumn.DataPropertyName = "BuyID";
@@ -76,6 +72,10 @@
             this.invoiceStateDataGridViewTextBoxColumn.DataPropertyName = "InvoiceState";
             this.invoiceStateDataGridViewTextBoxColumn.HeaderText = "배송상태";
             this.invoiceStateDataGridViewTextBoxColumn.Name = "invoiceStateDataGridViewTextBoxColumn";
+            // 
+            // bdsBuy
+            // 
+            this.bdsBuy.DataSource = typeof(AlaMungo.Data.Buy);
             // 
             // lblCount
             // 

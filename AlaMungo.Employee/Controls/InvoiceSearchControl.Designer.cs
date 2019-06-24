@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpToDate = new System.Windows.Forms.DateTimePicker();
             this.txbBuyerID = new System.Windows.Forms.TextBox();
             this.chbBuyerID = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtpToDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dtpFromDate = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,6 +65,15 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
+            // dtpToDate
+            // 
+            this.dtpToDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpToDate.Location = new System.Drawing.Point(259, 52);
+            this.dtpToDate.Name = "dtpToDate";
+            this.dtpToDate.Size = new System.Drawing.Size(137, 21);
+            this.dtpToDate.TabIndex = 15;
+            this.dtpToDate.Value = new System.DateTime(2019, 6, 21, 0, 0, 0, 0);
+            // 
             // txbBuyerID
             // 
             this.txbBuyerID.Location = new System.Drawing.Point(297, 17);
@@ -80,6 +89,7 @@
             this.chbBuyerID.Size = new System.Drawing.Size(15, 14);
             this.chbBuyerID.TabIndex = 17;
             this.chbBuyerID.UseVisualStyleBackColor = true;
+            this.chbBuyerID.CheckedChanged += new System.EventHandler(this.ChbBuyerID_CheckedChanged);
             // 
             // label4
             // 
@@ -89,15 +99,6 @@
             this.label4.Size = new System.Drawing.Size(68, 12);
             this.label4.TabIndex = 16;
             this.label4.Text = "구매자 ID : ";
-            // 
-            // dtpToDate
-            // 
-            this.dtpToDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpToDate.Location = new System.Drawing.Point(259, 52);
-            this.dtpToDate.Name = "dtpToDate";
-            this.dtpToDate.Size = new System.Drawing.Size(137, 21);
-            this.dtpToDate.TabIndex = 15;
-            this.dtpToDate.Value = new System.DateTime(2019, 6, 21, 0, 0, 0, 0);
             // 
             // label3
             // 
@@ -116,6 +117,7 @@
             this.dtpFromDate.Size = new System.Drawing.Size(137, 21);
             this.dtpFromDate.TabIndex = 13;
             this.dtpFromDate.Value = new System.DateTime(2019, 6, 21, 0, 0, 0, 0);
+            this.dtpFromDate.DragOver += new System.Windows.Forms.DragEventHandler(this.DtpFromDate_DragOver);
             // 
             // label2
             // 
@@ -135,6 +137,7 @@
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "검색";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // txbTitle
             // 
@@ -151,6 +154,7 @@
             this.chbDate.Size = new System.Drawing.Size(15, 14);
             this.chbDate.TabIndex = 5;
             this.chbDate.UseVisualStyleBackColor = true;
+            this.chbDate.CheckedChanged += new System.EventHandler(this.ChbDate_CheckedChanged);
             // 
             // chbTitle
             // 
@@ -160,6 +164,7 @@
             this.chbTitle.Size = new System.Drawing.Size(15, 14);
             this.chbTitle.TabIndex = 3;
             this.chbTitle.UseVisualStyleBackColor = true;
+            this.chbTitle.CheckedChanged += new System.EventHandler(this.ChbTitle_CheckedChanged);
             // 
             // label1
             // 
