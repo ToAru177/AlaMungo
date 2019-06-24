@@ -54,23 +54,23 @@
           <Property Name="Writer" Type="nvarchar" MaxLength="1000" Nullable="false" />
           <Property Name="Publisher" Type="nvarchar" MaxLength="1000" Nullable="false" />
           <Property Name="Price" Type="int" Nullable="false" />
-          <Property Name="image" Type="image" Nullable="false" />
+          <Property Name="image" Type="image" />
         </EntityType>
         <EntityType Name="Sell">
           <Key>
-            <PropertyRef Name="SellID" />
+            <PropertyRef Name="SaleID" />
           </Key>
-          <Property Name="SellID" Type="int" Nullable="false" />
+          <Property Name="SaleID" Type="int" Nullable="false" />
           <Property Name="SellerID" Type="int" Nullable="false" />
           <Property Name="RegistrationDate" Type="datetime" Nullable="false" />
           <Property Name="Checked" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="SellUsedBook">
           <Key>
-            <PropertyRef Name="SellID" />
+            <PropertyRef Name="SelID" />
             <PropertyRef Name="UsedBookID" />
           </Key>
-          <Property Name="SellID" Type="int" Nullable="false" />
+          <Property Name="SelID" Type="int" Nullable="false" />
           <Property Name="UsedBookID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="UsedBook">
@@ -134,10 +134,10 @@
           <End Role="SellUsedBook" Type="Self.SellUsedBook" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Sell">
-              <PropertyRef Name="SellID" />
+              <PropertyRef Name="SaleID" />
             </Principal>
             <Dependent Role="SellUsedBook">
-              <PropertyRef Name="SellID" />
+              <PropertyRef Name="SelID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -253,14 +253,14 @@
           <Property Name="Writer" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Publisher" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Price" Type="Int32" Nullable="false" />
-          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
           <NavigationProperty Name="UsedBooks" Relationship="Self.FK_UsedBook_MetaDataBook" FromRole="MetaDataBook" ToRole="UsedBook" />
         </EntityType>
         <EntityType Name="Sell">
           <Key>
-            <PropertyRef Name="SellID" />
+            <PropertyRef Name="SaleID" />
           </Key>
-          <Property Name="SellID" Type="Int32" Nullable="false" />
+          <Property Name="SaleID" Type="Int32" Nullable="false" />
           <Property Name="SellerID" Type="Int32" Nullable="false" />
           <Property Name="RegistrationDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Checked" Type="Boolean" Nullable="false" />
@@ -406,7 +406,7 @@
           <EntitySetMapping Name="Sells">
             <EntityTypeMapping TypeName="YesAlaMungoModel.Sell">
               <MappingFragment StoreEntitySet="Sell">
-                <ScalarProperty Name="SellID" ColumnName="SellID" />
+                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
                 <ScalarProperty Name="SellerID" ColumnName="SellerID" />
                 <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
                 <ScalarProperty Name="Checked" ColumnName="Checked" />
@@ -432,7 +432,7 @@
           </AssociationSetMapping>
           <AssociationSetMapping Name="SellUsedBook" TypeName="YesAlaMungoModel.SellUsedBook" StoreEntitySet="SellUsedBook">
             <EndProperty Name="Sell">
-              <ScalarProperty Name="SellID" ColumnName="SellID" />
+              <ScalarProperty Name="SaleID" ColumnName="SelID" />
             </EndProperty>
             <EndProperty Name="UsedBook">
               <ScalarProperty Name="UsedBookID" ColumnName="UsedBookID" />
@@ -455,7 +455,7 @@
         <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="없음" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->

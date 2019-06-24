@@ -10,7 +10,7 @@ namespace AlaMungo.Data
     {
         public static CustomerData Customer { get; } = new CustomerData();
         public static EmployeeData Employee { get; } = new EmployeeData();
-        public static MetaDataBookData MetaData { get; } = new MetaDataBookData();
+        public static MetaDataBookData MetaDataBook { get; } = new MetaDataBookData();
         public static SellData Sell { get; } = new SellData();
         public static BuyData Buy { get; } = new BuyData();
 

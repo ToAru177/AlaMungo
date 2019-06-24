@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AlaMungo.Employee
+namespace AlaMungo.Employee.Forms
 {
-    public partial class Form1 : Form
+    public partial class EmployeeMainForm : Form
     {
-        public Form1()
+        public EmployeeMainForm()
         {
             InitializeComponent();
         }
