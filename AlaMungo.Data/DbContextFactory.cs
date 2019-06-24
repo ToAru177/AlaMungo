@@ -9,7 +9,7 @@ namespace AlaMungo.Data
 {
     public class DbContextFactory
     {
-        private const string FilePath = @"d:\Iot\C#\20190610\EF.log";
+        private const string FilePath = @"d:\EF.log";
 
         private static void Write(string log)
         {

@@ -59,6 +59,12 @@
     <Compile Include="Controls\BuySearchControl.Designer.cs">
       <DependentUpon>BuySearchControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\InvoiceListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InvoiceListControl.Designer.cs">
+      <DependentUpon>InvoiceListControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\InvoiceSearchControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,22 +77,70 @@
     <Compile Include="Controls\SellSearchControl.Designer.cs">
       <DependentUpon>SellSearchControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Controls\SellListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SellListControl.Designer.cs">
+      <DependentUpon>SellListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\CustomerMainForm.Designer.cs">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InvoiceForm.Designer.cs">
+      <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SellForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SellForm.Designer.cs">
+      <DependentUpon>SellForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\BuySearchControl.resx">
       <DependentUpon>BuySearchControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InvoiceListControl.resx">
+      <DependentUpon>InvoiceListControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\InvoiceSearchControl.resx">
       <DependentUpon>InvoiceSearchControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SellListControl.resx">
+      <DependentUpon>SellListControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\SellSearchControl.resx">
       <DependentUpon>SellSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InvoiceForm.resx">
+      <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SellForm.resx">
+      <DependentUpon>SellForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,8 +150,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\AlaMungo.Data.Buy.datasource" />
+    <None Include="Properties\DataSources\AlaMungo.Data.MetaDataBook.datasource" />
+    <None Include="Properties\DataSources\AlaMungo.Data.UsedBook.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,13 +170,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\" />
+    <None Include="Resources\AlaMungoMain.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AlaMungo.Data\AlaMungo.Data.csproj">
       <Project>{99de9617-6ded-45f7-ac47-ef683935314f}</Project>
       <Name>AlaMungo.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-key_2867915.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlaMungoSmall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

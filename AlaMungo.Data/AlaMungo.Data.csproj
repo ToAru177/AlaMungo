@@ -53,7 +53,6 @@
     <Compile Include="Buy.cs">
       <DependentUpon>YesAlaMungo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>YesAlaMungo.tt</DependentUpon>
     </Compile>
@@ -69,6 +68,8 @@
     <Compile Include="Employee.cs">
       <DependentUpon>YesAlaMungo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Buy.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="MetaDataBook.cs">
       <DependentUpon>YesAlaMungo.tt</DependentUpon>
     </Compile>
@@ -96,17 +97,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
     <EntityDeploy Include="YesAlaMungo.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>YesAlaMungo.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="packages.config" />
     <None Include="YesAlaMungo.edmx.diagram">
       <DependentUpon>YesAlaMungo.edmx</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="YesAlaMungo.Context.tt">
@@ -119,12 +121,6 @@
       <DependentUpon>YesAlaMungo.edmx</DependentUpon>
       <LastGenOutput>YesAlaMungo.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

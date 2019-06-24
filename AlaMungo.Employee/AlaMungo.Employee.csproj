@@ -33,7 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -76,11 +83,17 @@
     <Compile Include="Controls\UsedBookSearchControl.Designer.cs">
       <DependentUpon>UsedBookSearchControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeInvoice.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeInvoice.Designer.cs">
-      <DependentUpon>EmployeeInvoice.cs</DependentUpon>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,9 +112,6 @@
     <EmbeddedResource Include="Controls\UsedBookSearchControl.resx">
       <DependentUpon>UsedBookSearchControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeInvoice.resx">
-      <DependentUpon>EmployeeInvoice.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -110,7 +120,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\AlaMungo.Data.Buy.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,13 +138,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\AlaMungo.Data\AlaMungo.Data.csproj">
       <Project>{99de9617-6ded-45f7-ac47-ef683935314f}</Project>
       <Name>AlaMungo.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlaMungoMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon_key_2867915_5SG_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_header_account_image_line_1540176_1Do_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_header-account-image-line_1540176.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-key_2867915.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AlaMungo.Employee.Forms;
 
 namespace AlaMungo.Employee
 {
@@ -16,7 +17,11 @@ namespace AlaMungo.Employee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeInvoice());
+            Application.Run(new LoginForm());
+
+            //쓰레드 관련. 메인
+            EmployeeMainForm main = new EmployeeMainForm();
+            //Application.Run(main);
         }
     }
 }
