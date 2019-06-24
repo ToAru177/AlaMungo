@@ -17,5 +17,29 @@ namespace AlaMungo.Employee.Controls
             InitializeComponent();
         }
 
+        private void ChbTitle_CheckedChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("^ ㅇ^?");
+        }
+
+        private void ChbBuyerID_CheckedChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("^ ㅇ^?");
+        }
+
+        private void ChbDate_CheckedChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("^ ㅇ^?");
+        }
+
+        private void DtpFromDate_DragOver(object sender, DragEventArgs e)
+        {
+            MessageBox.Show("^ ㅇ^?");
+        }
+
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("^ ㅇ^?");
+        }
     }
 }
